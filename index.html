@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <title>Exercise 3</title>
+    <title>DevC Exercise 3 - Hedi Harsono</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-    <center>
-        <h1>Daftar Planet</h1>
-    </center>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><b>Daftar Nama Planet</b></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="cariplanet" onkeyup="myFunction()" class="form-control mr-sm-2" type="search" placeholder="Tulis nama planet disini..." aria-label="Tulis nama planet disini...">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari planet</button>
+            </form>
+        </div>
+    </nav>
+    <hr>
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-striped" id="tableplanet">
+                <thead class="thead-dark">
+                    <tr style="text-align: justify;">
+                        <th scope="col">Name</th>
+                        <th scope="col">Rotation Period</th>
+                        <th scope="col">Orbital Period</th>
+                        <th scope="col">Diameter</th>
+                        <th scope="col">Climate</th>
+                        <th scope="col">Gravity</th>
+                        <th scope="col">Terrain</th>
+                        <th scope="col">Surface Water</th>
+                        <th scope="col">Population</th>
+                        <th scope="col">Residents</th>
+                        <th scope="col">Films</th>
+                        <th scope="col">Created</th>
+                        <th scope="col">Edited</th>
+                        <th scope="col">URL</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="planet.js"></script>
+
 </body>
+
 </html>
